@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 class homeScreen extends StatefulWidget {
   @override
   _homeScreenState createState() => _homeScreenState();
@@ -9,46 +10,131 @@ class _homeScreenState extends State<homeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Color.fromARGB(255, 255, 235, 59),
       appBar: AppBar(
-        title: Text(("Python Ögren"), textAlign:TextAlign.center, style: TextStyle(fontSize: 25),),
+        title: Center(
+          child: Text(
+            ("Python Öğren"),
+            style: TextStyle(fontSize: 25),
+          ),
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(20),
+          ),
+        ),
+        backgroundColor: Color.fromARGB(255, 112, 112, 112),
       ),
-      body: Column(
-
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              IconButton(icon: Icon(Icons.add_circle,size: 100,), ),
-              IconButton(icon: Icon(Icons.add_alarm,size: 100,), ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Text("Kodla"),
-              Text("Oyun"),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              IconButton(icon: Icon(Icons.add_call,size: 100,), ),
-              IconButton(icon: Icon(Icons.add_a_photo,size: 100,), ),
-            ],
-          ),
-
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Text("Profil"),
-              Text("Kurulum"),
-            ],
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(80.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 112, 112, 112),
+                        borderRadius: BorderRadius.circular(90),
+                      ),
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.code,
+                          color: Color.fromARGB(255, 255, 235, 59),
+                          size: 70,
+                        ),
+                      ),
+                      width: 100,
+                      height: 100,
+                    ),
+                    Text(
+                      "Kodla",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: <Widget>[
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 112, 112, 112),
+                        borderRadius: BorderRadius.circular(90),
+                      ),
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.videogame_asset,
+                          color: Color.fromARGB(255, 255, 235, 59),
+                          size: 70,
+                        ),
+                      ),
+                      width: 100,
+                      height: 100,
+                    ),
+                    Text(
+                      "Oyna",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 112, 112, 112),
+                        borderRadius: BorderRadius.circular(90),
+                      ),
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.person,
+                          color: Color.fromARGB(255, 255, 235, 59),
+                          size: 70,
+                        ),
+                      ),
+                      width: 100,
+                      height: 100,
+                    ),
+                    Text(
+                      "Profil",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: <Widget>[
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 112, 112, 112),
+                        borderRadius: BorderRadius.circular(90),
+                      ),
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.laptop_windows,
+                          color: Color.fromARGB(255, 255, 235, 59),
+                          size: 70,
+                        ),
+                      ),
+                      width: 100,
+                      height: 100,
+                    ),
+                    Text(
+                      "Kurulum",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
-
     );
   }
 }
