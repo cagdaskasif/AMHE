@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pyton_ogren/dersler/anasayfa/ogrenmeyebasla.dart';
+
 
 class homeScreen extends StatefulWidget {
   @override
@@ -41,11 +43,26 @@ class _homeScreenState extends State<homeScreen> {
                         borderRadius: BorderRadius.circular(90),
                       ),
                       child: IconButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> ogrenmeyebasla() ));
+                        },
                         icon: Icon(
                           Icons.code,
                           color: Color.fromARGB(255, 255, 235, 59),
                           size: 70,
                         ),
+
+
+/*                        RaisedButton(
+                          child: Text("Git"),
+                          textColor: Colors.white,
+                          color: Colors.blue,
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=> homeScreen()));
+                          },
+                        ),*/
+
+
                       ),
                       width: 100,
                       height: 100,

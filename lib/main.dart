@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'kullanici_girisi.dart';
+import 'package:pyton_ogren/homeScreen.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
 
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: KullaniciGirisi(),
+      home: homeScreen(),
     );
   }
 }

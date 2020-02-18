@@ -23,7 +23,18 @@ class OyunlarRadioButton extends StatelessWidget{
       ),
       body: Column(
         children: <Widget>[
-
+      Center(
+        child: Container(
+          child: Text(("Buraya Soruyu yazıcaksın"),
+          style: TextStyle(fontSize: 24),),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(5),
+          ),
+          width: 333,
+          height: 134,
+        ),
+      ),
         ],
       ),
     );
