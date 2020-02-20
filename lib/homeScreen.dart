@@ -64,6 +64,48 @@ class _homeScreenState extends State<homeScreen> {
                     ),
                   ],
                 ),
+
+                /*Column(
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 112, 112, 112),
+                        borderRadius: BorderRadius.circular(90),
+
+                      ),
+                      child:
+                        Expanded(
+                          flex: 4,
+                          child:
+    new LayoutBuilder(builder: (context, constraint) {
+    return new
+                      IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ogrenmeyebasla()));
+                        },
+                        icon: Icon(
+                          Icons.code,
+                          color: Color.fromARGB(255, 255, 235, 59),
+                          size: constraint.biggest.height/30,
+                        ),
+
+                        );
+
+  },),
+
+      ),
+                      // width: 100,
+                      //  height: 100,
+                    ),
+                    Text(
+                      "Kodla",
+                    ),
+                  ],
+                ),*/
                 Column(
                   children: <Widget>[
                     Container(

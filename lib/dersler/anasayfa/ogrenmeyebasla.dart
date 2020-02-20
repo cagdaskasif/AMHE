@@ -16,10 +16,10 @@ class _ogrenmeyebaslaState extends State<ogrenmeyebasla> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 255, 235, 59),
       appBar: AppBar(
-        title:  Text(
-            ("Bölümler"),
-            style: TextStyle(fontSize: 25),
-          ),
+        title: Text(
+          ("Bölümler"),
+          style: TextStyle(fontSize: 25),
+        ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(20),
@@ -31,139 +31,174 @@ class _ogrenmeyebaslaState extends State<ogrenmeyebasla> {
         child: Column(
           children: <Widget>[
             Container(
-              child: Row(
-                children: <Widget>[
-                  IconButton(
-                      icon: Icon(
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+              child: RaisedButton(
+                color: Colors.white,
+                padding: EdgeInsets.all(2.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Icon(
                         Icons.label_important,
                         size: 40,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyApp()),
-                        );
-                      }),
-                  Text(
-                    "Giriş",
-                    style: TextStyle(fontSize: 24),
-                  )
-                ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Text(
+                        "Giriş",
+                        style: TextStyle(
+                          fontSize: 24,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyApp()),
+                  );
+                },
               ),
-              decoration: BoxDecoration(
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+              child: RaisedButton(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(5),
+                padding: EdgeInsets.all(2.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Icon(
+                        Icons.label_important,
+                        size: 40,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Text(
+                        "Veri Tipleri",
+                        style: TextStyle(
+                          fontSize: 24,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyApp2()),
+                  );
+                },
               ),
-              constraints: BoxConstraints.expand(height: 50),
+            ),
+            Container(
               margin: EdgeInsets.fromLTRB(20, 50, 20, 10),
-            ),
-            Container(
-              child: Row(
-                children: <Widget>[
-                  IconButton(
-                      icon: Icon(
+              child: RaisedButton(
+                color: Colors.white,
+                padding: EdgeInsets.all(2.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Icon(
                         Icons.label_important,
                         size: 40,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyApp2()),
-                        );
-                      }),
-                  Text(
-                    "Veri Tipleri",
-                    style: TextStyle(fontSize: 24),
-                  )
-                ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Text(
+                        "Değişkenler",
+                        style: TextStyle(
+                          fontSize: 24,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyApp3()),
+                  );
+                },
               ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5),
-              ),
-              constraints: BoxConstraints.expand(height: 50),
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
             ),
             Container(
-              child: Row(
-                children: <Widget>[
-                  IconButton(
-                      icon: Icon(
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+              child: RaisedButton(
+                color: Colors.white,
+                padding: EdgeInsets.all(2.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Icon(
                         Icons.label_important,
                         size: 40,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyApp3()),
-                        );
-                      }),
-                  Text(
-                    "Değişkenler",
-                    style: TextStyle(fontSize: 24),
-                  )
-                ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Text(
+                        "Koşul ve Karar Yapıları",
+                        style: TextStyle(
+                          fontSize: 24,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyApp4()),
+                  );
+                },
               ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5),
-              ),
-              constraints: BoxConstraints.expand(height: 50),
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
             ),
             Container(
-              child: Row(
-                children: <Widget>[
-                  IconButton(
-                      icon: Icon(
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+              child: RaisedButton(
+                color: Colors.white,
+                padding: EdgeInsets.all(2.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Icon(
                         Icons.label_important,
                         size: 40,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyApp4()),
-                        );
-                      }),
-                  Text(
-                    "Koşul ve Karar Yapıları",
-                    style: TextStyle(fontSize: 24),
-                  )
-                ],
-              ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5),
-              ),
-              constraints: BoxConstraints.expand(height: 50),
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-            ),
-            Container(
-              child: Row(
-                children: <Widget>[
-                  IconButton(
-                      icon: Icon(
-                        Icons.label_important,
-                        size: 40,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Text(
+                        "Döngüler",
+                        style: TextStyle(
+                          fontSize: 24,
+                        ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyApp5()),
-                        );
-                      }),
-                  Text(
-                    "Döngüler",
-                    style: TextStyle(fontSize: 24),
-                  )
-                ],
+                    ),
+                  ],
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyApp5()),
+                  );
+                },
               ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5),
-              ),
-              constraints: BoxConstraints.expand(height: 50),
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
             ),
           ],
         ),
