@@ -9,12 +9,11 @@ class KullaniciGirisi extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 255, 235, 59),
       appBar: AppBar(
-        title: Center(
-          child: Text(
-            ("Python Öğren"),
+        title: Text(
+            ("Kullanıcı Girişi"),
             style: TextStyle(fontSize: 25),
           ),
-        ),
+
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(20),
