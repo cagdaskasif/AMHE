@@ -49,7 +49,7 @@ class KullaniciGirisi extends StatelessWidget {
             RaisedButton(
               child: Text("Git"),
               textColor: Colors.white,
-              color: Colors.blue,
+              color: Color.fromARGB(255, 21, 146, 230),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> homeScreen()));
               },

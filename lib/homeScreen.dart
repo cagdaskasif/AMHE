@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pyton_ogren/dersler/anasayfa/ogrenmeyebasla.dart';
 import 'package:pyton_ogren/kullanici_girisi.dart';
+import 'package:pyton_ogren/kurulum.dart';
 import 'package:pyton_ogren/oyunlarRadioButton.dart';
 
 class homeScreen extends StatefulWidget {
@@ -64,48 +65,6 @@ class _homeScreenState extends State<homeScreen> {
                     ),
                   ],
                 ),
-
-                /*Column(
-                  children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 112, 112, 112),
-                        borderRadius: BorderRadius.circular(90),
-
-                      ),
-                      child:
-                        Expanded(
-                          flex: 4,
-                          child:
-    new LayoutBuilder(builder: (context, constraint) {
-    return new
-                      IconButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => ogrenmeyebasla()));
-                        },
-                        icon: Icon(
-                          Icons.code,
-                          color: Color.fromARGB(255, 255, 235, 59),
-                          size: constraint.biggest.height/30,
-                        ),
-
-                        );
-
-  },),
-
-      ),
-                      // width: 100,
-                      //  height: 100,
-                    ),
-                    Text(
-                      "Kodla",
-                    ),
-                  ],
-                ),*/
                 Column(
                   children: <Widget>[
                     Container(
@@ -179,7 +138,7 @@ class _homeScreenState extends State<homeScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => OyunlarRadioButton()));
+                                  builder: (context) => Kurulum()));
                         },
                         icon: Icon(
                           Icons.laptop_windows,

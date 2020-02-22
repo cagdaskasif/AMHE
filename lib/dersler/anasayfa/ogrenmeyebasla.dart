@@ -31,7 +31,7 @@ class _ogrenmeyebaslaState extends State<ogrenmeyebasla> {
         child: Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+              margin: EdgeInsets.fromLTRB(20, 50, 20, 10),
               child: RaisedButton(
                 color: Colors.white,
                 padding: EdgeInsets.all(2.0),
@@ -59,7 +59,7 @@ class _ogrenmeyebaslaState extends State<ogrenmeyebasla> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MyApp()),
+                    MaterialPageRoute(builder: (context) => MyApp1()),
                   );
                 },
               ),
@@ -99,7 +99,7 @@ class _ogrenmeyebaslaState extends State<ogrenmeyebasla> {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(20, 50, 20, 10),
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
               child: RaisedButton(
                 color: Colors.white,
                 padding: EdgeInsets.all(2.0),
