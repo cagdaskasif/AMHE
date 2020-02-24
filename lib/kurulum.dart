@@ -7,7 +7,7 @@ class Kurulum extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 255, 235, 59),
       appBar: AppBar(
-        title:  Text(
+        title: Text(
           ("Kurulum (Sayfa Deneme)"),
           style: TextStyle(fontSize: 25),
         ),
@@ -18,9 +18,7 @@ class Kurulum extends StatelessWidget {
         ),
         backgroundColor: Color.fromARGB(255, 112, 112, 112),
       ),
-      body: Column(
-
-      ),
+      body: Column(),
     );
   }
 }

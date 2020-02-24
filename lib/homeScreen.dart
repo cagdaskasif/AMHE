@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pyton_ogren/dersler/anasayfa/ogrenmeyebasla.dart';
+import 'package:pyton_ogren/dersler/anasayfa/kodla.dart';
 import 'package:pyton_ogren/kullanici_girisi.dart';
 import 'package:pyton_ogren/kurulum.dart';
 import 'package:pyton_ogren/oyunlarRadioButton.dart';
@@ -37,35 +37,35 @@ class _homeScreenState extends State<homeScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Column(
-                  children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 112, 112, 112),
-                        borderRadius: BorderRadius.circular(90),
-                      ),
-                      child: IconButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => ogrenmeyebasla()));
-                        },
-                        icon: Icon(
-                          Icons.code,
-                          color: Color.fromARGB(255, 255, 235, 59),
-                          size: 70,
+                Expanded(
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 112, 112, 112),
+                          borderRadius: BorderRadius.circular(90),
+                        ),
+                        child: IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ogrenmeyebasla()));
+                          },
+                          icon: Icon(
+                            Icons.code,
+                            color: Color.fromARGB(255, 255, 235, 59),
+                          ),
                         ),
                       ),
-                      width: 100,
-                      height: 100,
-                    ),
-                    Text(
-                      "Kodla",
-                    ),
-                  ],
+                      Text(
+                        "Kodla",
+                      ),
+                    ],
+                  ),
                 ),
-                Column(
+
+                Expanded(child: Column(
                   children: <Widget>[
                     Container(
                       decoration: BoxDecoration(
@@ -82,16 +82,14 @@ class _homeScreenState extends State<homeScreen> {
                         icon: Icon(
                           Icons.videogame_asset,
                           color: Color.fromARGB(255, 255, 235, 59),
-                          size: 70,
                         ),
                       ),
-                      width: 100,
-                      height: 100,
                     ),
                     Text(
                       "Çözelim",
                     ),
                   ],
+                ),
                 ),
               ],
             ),

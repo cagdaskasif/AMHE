@@ -34,15 +34,19 @@ class MyApp2State extends State<MyApp2> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Veri Tipleri',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Veri Tipleri"),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          ("Giriş"),
+          style: TextStyle(fontSize: 25),
         ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(20),
+          ),
+        ),
+        backgroundColor: Color.fromARGB(255, 112, 112, 112),
+      ),
         body: _pageOptions[selectedPage],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: selectedPage,
@@ -53,47 +57,47 @@ class MyApp2State extends State<MyApp2> {
           },
           items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 1"),
-                backgroundColor: Colors.amber),
+              backgroundColor: Color.fromARGB(255, 21, 146, 230),
+              icon: Icon(Icons.adjust),
+              title: Text("1"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 2"),
-                backgroundColor: Colors.amber),
+              icon: Icon(Icons.adjust),
+              title: Text("2"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 3"),
-                backgroundColor: Colors.amber),
+              icon: Icon(Icons.adjust),
+              title: Text("3"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 4"),
-                backgroundColor: Colors.amber),
+              icon: Icon(Icons.adjust),
+              title: Text("4"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 5"),
-                backgroundColor: Colors.amber),
+              icon: Icon(Icons.adjust),
+              title: Text("5"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 6"),
-                backgroundColor: Colors.amber),
+              icon: Icon(Icons.adjust),
+              title: Text("6"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 7"),
-                backgroundColor: Colors.amber),
+              icon: Icon(Icons.adjust),
+              title: Text("7"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 8"),
-                backgroundColor: Colors.amber),
+              icon: Icon(Icons.adjust),
+              title: Text("8"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 9"),
-                backgroundColor: Colors.amber),
+              icon: Icon(Icons.adjust),
+              title: Text("9"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                title: Text("Veri 10"),
-                backgroundColor: Colors.amber)
+              icon: Icon(Icons.adjust),
+              title: Text("10"),
+            )
           ],
-        ),
       ),
     );
   }
