@@ -29,11 +29,9 @@ class _homeScreenState extends State<homeScreen> {
         ),
         backgroundColor: Color.fromARGB(255, 112, 112, 112),
       ),
-      body:
-      Container(
+      body: Container(
         margin: new EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
-
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             Row(
@@ -45,36 +43,28 @@ class _homeScreenState extends State<homeScreen> {
                     margin: new EdgeInsets.symmetric(horizontal: 20.0),
                     color: Colors.red,
                     child: Column(
-                        children: <Widget>[
+                      children: <Widget>[
                         Container(
-
                           decoration: BoxDecoration(
-
                             color: Color.fromARGB(255, 112, 112, 112),
                             borderRadius: BorderRadius.circular(90),
                           ),
                           child: IconButton(
-
                             onPressed: () {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) => ogrenmeyebasla()));
                             },
-
                             icon: Icon(
-
                               Icons.code,
                               color: Color.fromARGB(255, 255, 235, 59),
-
                             ),
                           ),
-
-
                         ),
-                          Text(
-                            "Kodla",
-                          ),
+                        Text(
+                          "Kodla",
+                        ),
                       ],
                     ),
                   ),
@@ -85,7 +75,6 @@ class _homeScreenState extends State<homeScreen> {
                     children: <Widget>[
                       Container(
                         decoration: BoxDecoration(
-
                           color: Color.fromARGB(255, 112, 112, 112),
                           borderRadius: BorderRadius.circular(90),
                         ),
@@ -94,18 +83,17 @@ class _homeScreenState extends State<homeScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => OyunlarRadioButton()));
+                                    builder: (context) =>
+                                        OyunlarRadioButton()));
                           },
                           icon: Icon(
                             Icons.videogame_asset,
                             color: Color.fromARGB(255, 255, 235, 59),
-
                           ),
                         ),
-                       // width: 100,
-                       // height: 100,
+                        // width: 100,
+                        // height: 100,
                       ),
-
                       Text(
                         "Çözelim",
                       ),
@@ -123,7 +111,6 @@ class _homeScreenState extends State<homeScreen> {
                     children: <Widget>[
                       Container(
                         decoration: BoxDecoration(
-
                           color: Color.fromARGB(255, 112, 112, 112),
                           borderRadius: BorderRadius.circular(90),
                         ),
@@ -137,10 +124,8 @@ class _homeScreenState extends State<homeScreen> {
                           icon: Icon(
                             Icons.person,
                             color: Color.fromARGB(255, 255, 235, 59),
-
                           ),
                         ),
-
                       ),
                       Text(
                         "Profil",
@@ -154,7 +139,6 @@ class _homeScreenState extends State<homeScreen> {
                     children: <Widget>[
                       Container(
                         decoration: BoxDecoration(
-
                           color: Color.fromARGB(255, 112, 112, 112),
                           borderRadius: BorderRadius.circular(90),
                         ),
@@ -168,10 +152,8 @@ class _homeScreenState extends State<homeScreen> {
                           icon: Icon(
                             Icons.laptop_windows,
                             color: Color.fromARGB(255, 255, 235, 59),
-
                           ),
                         ),
-
                       ),
                       Text(
                         "Kurulum",
