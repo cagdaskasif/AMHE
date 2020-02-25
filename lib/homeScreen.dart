@@ -29,19 +29,63 @@ class _homeScreenState extends State<homeScreen> {
         ),
         backgroundColor: Color.fromARGB(255, 112, 112, 112),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(80.0),
+      body:
+      Container(
+        margin: new EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
+
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Expanded(
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    margin: new EdgeInsets.symmetric(horizontal: 20.0),
+                    color: Colors.red,
+                    child: Column(
+                        children: <Widget>[
+                        Container(
+
+                          decoration: BoxDecoration(
+
+                            color: Color.fromARGB(255, 112, 112, 112),
+                            borderRadius: BorderRadius.circular(90),
+                          ),
+                          child: IconButton(
+
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ogrenmeyebasla()));
+                            },
+
+                            icon: Icon(
+
+                              Icons.code,
+                              color: Color.fromARGB(255, 255, 235, 59),
+
+                            ),
+                          ),
+
+
+                        ),
+                          Text(
+                            "Kodla",
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  color: Colors.blue,
                   child: Column(
                     children: <Widget>[
                       Container(
                         decoration: BoxDecoration(
+
                           color: Color.fromARGB(255, 112, 112, 112),
                           borderRadius: BorderRadius.circular(90),
                         ),
@@ -50,107 +94,90 @@ class _homeScreenState extends State<homeScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => ogrenmeyebasla()));
+                                    builder: (context) => OyunlarRadioButton()));
                           },
                           icon: Icon(
-                            Icons.code,
+                            Icons.videogame_asset,
                             color: Color.fromARGB(255, 255, 235, 59),
+
                           ),
                         ),
+                       // width: 100,
+                       // height: 100,
                       ),
+
                       Text(
-                        "Kodla",
+                        "Çözelim",
                       ),
                     ],
                   ),
-                ),
-
-                Expanded(child: Column(
-                  children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 112, 112, 112),
-                        borderRadius: BorderRadius.circular(90),
-                      ),
-                      child: IconButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => OyunlarRadioButton()));
-                        },
-                        icon: Icon(
-                          Icons.videogame_asset,
-                          color: Color.fromARGB(255, 255, 235, 59),
-                        ),
-                      ),
-                    ),
-                    Text(
-                      "Çözelim",
-                    ),
-                  ],
-                ),
                 ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Column(
-                  children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 112, 112, 112),
-                        borderRadius: BorderRadius.circular(90),
-                      ),
-                      child: IconButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => KullaniciGirisi()));
-                        },
-                        icon: Icon(
-                          Icons.person,
-                          color: Color.fromARGB(255, 255, 235, 59),
-                          size: 70,
+                Container(
+                  color: Colors.white,
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(
+
+                          color: Color.fromARGB(255, 112, 112, 112),
+                          borderRadius: BorderRadius.circular(90),
                         ),
+                        child: IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => KullaniciGirisi()));
+                          },
+                          icon: Icon(
+                            Icons.person,
+                            color: Color.fromARGB(255, 255, 235, 59),
+
+                          ),
+                        ),
+
                       ),
-                      width: 100,
-                      height: 100,
-                    ),
-                    Text(
-                      "Profil",
-                    ),
-                  ],
+                      Text(
+                        "Profil",
+                      ),
+                    ],
+                  ),
                 ),
-                Column(
-                  children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 112, 112, 112),
-                        borderRadius: BorderRadius.circular(90),
-                      ),
-                      child: IconButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Kurulum()));
-                        },
-                        icon: Icon(
-                          Icons.laptop_windows,
-                          color: Color.fromARGB(255, 255, 235, 59),
-                          size: 70,
+                Container(
+                  color: Colors.black,
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(
+
+                          color: Color.fromARGB(255, 112, 112, 112),
+                          borderRadius: BorderRadius.circular(90),
                         ),
+                        child: IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Kurulum()));
+                          },
+                          icon: Icon(
+                            Icons.laptop_windows,
+                            color: Color.fromARGB(255, 255, 235, 59),
+
+                          ),
+                        ),
+
                       ),
-                      width: 100,
-                      height: 100,
-                    ),
-                    Text(
-                      "Kurulum",
-                    ),
-                  ],
+                      Text(
+                        "Kurulum",
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
